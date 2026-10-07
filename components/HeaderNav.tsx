@@ -31,11 +31,10 @@ export default function HeaderNav({ links }: { links?: NavLink[] }) {
             key={link.href + link.label}
             href={link.href}
             aria-current={isActive ? "page" : undefined}
-            className={`relative py-1 text-[13.5px] lg:text-[14px] font-medium transition-colors ${
-              isActive
+            className={`relative py-1 text-[13.5px] lg:text-[14px] font-medium transition-colors ${isActive
                 ? "text-[#17483F] font-bold after:absolute after:bottom-[-6px] after:left-0 after:right-0 after:h-[2px] after:rounded-full after:bg-[#D8C7A0]"
                 : "text-[#172321] hover:text-[#17483F]"
-            }`}
+              }`}
           >
             {link.label}
           </Link>

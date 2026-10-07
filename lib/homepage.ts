@@ -367,10 +367,10 @@ export const DEFAULT_SECTIONS: HomepageSections = {
     ctaButtonText: "See Loro Parque Tickets",
     ctaHref: "#tours",
     images: [
-      { src: "/images/lp-parrots.jpg", alt: "Colourful tropical parrots and macaws", label: "Parrots" },
-      { src: "/images/lp-aquarium.jpg", alt: "Undersea aquarium tunnel with marine life", label: "Aquarium" },
-      { src: "/images/lp-penguins.jpg", alt: "Planet Penguin antarctic habitat", label: "Penguins" },
-      { src: "/images/lp-tenerife.jpg", alt: "Tenerife coast with Mount Teide", label: "Tenerife" },
+      { src: "/images/lp-parrots.jpg", alt: "Colourful tropical parrots and macaws in lush rainforest aviary", label: "Parrots" },
+      { src: "/images/lp-aquarium.jpg", alt: "Undersea aquarium tunnel with marine life, sharks and rays", label: "Aquarium" },
+      { src: "/images/lp-penguins.jpg", alt: "Planet Penguin antarctic habitat with king penguins and snow", label: "Penguins" },
+      { src: "/images/lp-tenerife.jpg", alt: "Tenerife coast with Mount Teide volcano and ocean view", label: "Tenerife" },
     ],
   },
   practical: {

@@ -639,7 +639,7 @@ async function seedAboutPage() {
       "We built this site around one belief: Loro Parque is one of Tenerife's best-loved days out — but only if you book the right ticket. With several ticket types and booking partners to choose from, inclusions, extras and prices vary.",
     introParagraph2:
       "We are an independent booking resource — not Loro Parque or its operators. We compare bookable tickets and experiences sold through trusted, established booking partners.",
-    introImage: "/images/lp-parrots.svg",
+    introImage: "/images/lp-parrots.jpg",
     introImageAlt: "Colourful parrots among palm leaves",
     reasonsHeading: "How We Select Loro Parque Tickets",
     reasonsSubheading: "Every ticket featured on this site is checked against four criteria before we list it.",

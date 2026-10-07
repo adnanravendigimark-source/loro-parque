@@ -2,25 +2,19 @@ import Logo from "./Logo";
 import MobileNav from "./MobileNav";
 import HeaderNav from "./HeaderNav";
 import StickyHeader from "./StickyHeader";
-import { SearchIcon, UserIcon, TicketPillIcon } from "./icons";
+import { TicketPillIcon } from "./icons";
 import { getHomepageContent } from "@/lib/homepage";
-import Link from "next/link";
 
 export default async function Header() {
   const content = await getHomepageContent();
   const header = content.header;
 
-  const defaultNavLinks = [
+  const navLinks = [
     { label: "Home", href: "/" },
-    { label: "Tickets", href: "/#tours" },
-    { label: "What to Expect", href: "/#what-to-expect" },
-    { label: "Highlights", href: "/#must-see-ruins" },
-    { label: "Blog", href: "/blog" },
     { label: "About Us", href: "/about" },
+    { label: "Blog", href: "/blog" },
     { label: "Contact", href: "/contact" },
   ];
-
-  const navLinks = header.navLinks && header.navLinks.length > 0 ? header.navLinks : defaultNavLinks;
   const ctaText = header.ctaText || header.bookNowText || "BOOK NOW";
   const rawCtaHref = header.ctaHref || "#tours";
   const ctaHref = rawCtaHref.startsWith("#") ? `/${rawCtaHref}` : rawCtaHref;
@@ -38,24 +32,6 @@ export default async function Header() {
         <HeaderNav links={navLinks} />
 
         <div className="flex items-center gap-4">
-          {/* Search Icon button */}
-          <Link
-            href="/blog"
-            aria-label="Search guides"
-            className="hidden sm:inline-flex h-9 w-9 items-center justify-center rounded-full text-[#172321] hover:text-[#17483F] hover:bg-[#F7F8F4] transition-colors"
-          >
-            <SearchIcon className="h-5 w-5" />
-          </Link>
-
-          {/* User Icon button */}
-          <Link
-            href="/contact"
-            aria-label="Help & Contact"
-            className="hidden sm:inline-flex h-9 w-9 items-center justify-center rounded-full text-[#172321] hover:text-[#17483F] hover:bg-[#F7F8F4] transition-colors"
-          >
-            <UserIcon className="h-5 w-5" />
-          </Link>
-
           {/* Book Now Pill Button */}
           <a
             href={ctaHref}

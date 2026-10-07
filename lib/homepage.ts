@@ -249,11 +249,8 @@ export const DEFAULT_HEADER: HeaderContent = {
   bookNowText: "BOOK TICKETS",
   navLinks: [
     { label: "Home", href: "/" },
-    { label: "Tickets", href: "/#tours" },
-    { label: "What to Expect", href: "/#what-to-expect" },
-    { label: "Highlights", href: "/#must-see-ruins" },
-    { label: "Blog", href: "/blog" },
     { label: "About Us", href: "/about" },
+    { label: "Blog", href: "/blog" },
     { label: "Contact", href: "/contact" },
   ],
   ctaText: "BOOK NOW",

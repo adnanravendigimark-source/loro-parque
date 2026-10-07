@@ -33,7 +33,7 @@ const DEFAULT_CONTACT: ContactPageContent = {
   heroHeading: "Get in Touch",
   heroSubheading:
     "Questions about booking Loro Parque tickets, experiences or travel partnerships? Reach out directly.",
-  email: "info@loroparquetickets.com",
+  email: "livetravelpartner@gmail.com",
   emailLabel: "Email us directly",
   emailNote: "We typically reply within 1–2 business days.",
   reasonsHeading: "How We Can Help",

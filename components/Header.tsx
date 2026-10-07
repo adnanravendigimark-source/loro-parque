@@ -31,7 +31,7 @@ export default async function Header() {
 
         <HeaderNav links={navLinks} />
 
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-3.5 sm:gap-4">
           {/* Book Now Pill Button */}
           <a
             href={ctaHref}

@@ -1,0 +1,16 @@
+{
+  "heroBadge": "TENERIFE'S TOP ATTRACTION",
+  "heroHeading": "Loro Parque Tickets",
+  "heroSubheading": "Meet incredible animals, stunning shows and unforgettable experiences at one of the world's most loved zoos — Loro Parque in Tenerife.",
+  "heroImage": "/images/hero-loro-parque.jpg",
+  "heroImageAlt": "Majestic Blue-and-Gold Macaw with waterfall and tropical gardens at Loro Parque, Tenerife",
+  "showFeaturedTour": true,
+  "featuredTourId": "loro-parque-entry-ticket",
+  "featuredBadgeLabel": "Recommended",
+  "featuredUrgencyText": "Book ahead for your date",
+  "featuredReasons": [
+    "Choose your date in advance",
+    "Instant mobile confirmation",
+    "Check the booking page for cancellation terms"
+  ]
+}

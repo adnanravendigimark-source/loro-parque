@@ -1,0 +1,77 @@
+[
+  {
+    "id": "loro-parque-entry-ticket",
+    "badge": "self-guided",
+    "ribbon": "Entry",
+    "title": "Loro Parque Entry Ticket",
+    "description": "General admission to Loro Parque in Puerto de la Cruz, Tenerife, with access to the park's habitats, gardens and daily animal presentations.",
+    "includes": [
+      "General admission to Loro Parque",
+      "Access to habitats, gardens and presentations",
+      "Choose your date in advance",
+      "Instant mobile confirmation"
+    ],
+    "duration": "Full day (4–5 hours+)",
+    "rating": 4.9,
+    "reviews": 3420,
+    "price": 42,
+    "image": "/images/lp-parrots.jpg",
+    "imageAlt": "Colourful parrots and macaws in lush aviaries at Loro Parque",
+    "hrefPath": "",
+    "hrefExtra": "",
+    "featured": true,
+    "bestFor": "Families and independent visitors who want to explore at their own pace",
+    "priceTableColumn1": "Full day",
+    "priceTableFeature": "No"
+  },
+  {
+    "id": "loro-parque-guided-experience",
+    "badge": "guided",
+    "ribbon": "Experience",
+    "title": "Loro Parque Guided Experience",
+    "description": "Entry to Loro Parque plus a guided element, with a guide to introduce the park's animals, penguin habitat, aquarium and conservation work.",
+    "includes": [
+      "General admission to Loro Parque",
+      "Guided element with an expert guide",
+      "Choose your date in advance",
+      "Instant mobile confirmation"
+    ],
+    "duration": "Full day",
+    "rating": 4.9,
+    "reviews": 1180,
+    "price": 68,
+    "image": "/images/lp-aquarium.jpg",
+    "imageAlt": "Undersea aquarium tunnel with marine life at Loro Parque",
+    "hrefPath": "",
+    "hrefExtra": "",
+    "featured": false,
+    "bestFor": "Visitors who want more background on the animals and the park",
+    "priceTableColumn1": "Full day",
+    "priceTableFeature": "Yes — guided"
+  },
+  {
+    "id": "loro-parque-transfer-ticket",
+    "badge": "combo",
+    "ribbon": "Transfer",
+    "title": "Loro Parque Ticket with Transfer",
+    "description": "Entry to Loro Parque combined with a return transfer from selected areas of Tenerife, so you can skip the driving.",
+    "includes": [
+      "General admission to Loro Parque",
+      "Return transfer from selected pick-up points",
+      "Choose your date in advance",
+      "Instant mobile confirmation"
+    ],
+    "duration": "Full day",
+    "rating": 4.8,
+    "reviews": 890,
+    "price": 58,
+    "image": "/images/lp-tenerife.jpg",
+    "imageAlt": "Scenic Tenerife coastline and transport to Loro Parque",
+    "hrefPath": "",
+    "hrefExtra": "",
+    "featured": false,
+    "bestFor": "Visitors staying in the south of Tenerife who don't want to drive",
+    "priceTableColumn1": "Full day",
+    "priceTableFeature": "No"
+  }
+]

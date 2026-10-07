@@ -632,8 +632,8 @@ async function seedAboutPage() {
     heroHeading: "Your Independent Guide to Loro Parque Tickets",
     heroSubheading:
       "We help travelers compare and book Loro Parque tickets and experiences in Tenerife.",
-    heroImage: "/images/lp-hero.svg",
-    heroImageAlt: "Tropical leaves and colourful parrots with Mount Teide in the distance",
+    heroImage: "/images/about-hero-gardens.jpg",
+    heroImageAlt: "Lush tropical botanical gardens, palm trees, waterfall and mountains at Loro Parque Tenerife",
     introHeading: "Why We Built a Loro Parque Ticket Guide",
     introParagraph1:
       "We built this site around one belief: Loro Parque is one of Tenerife's best-loved days out — but only if you book the right ticket. With several ticket types and booking partners to choose from, inclusions, extras and prices vary.",

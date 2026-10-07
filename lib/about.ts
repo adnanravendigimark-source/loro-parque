@@ -39,8 +39,8 @@ const DEFAULT_ABOUT: AboutPageContent = {
   heroHeading: "Your Independent Guide to Loro Parque Tickets",
   heroSubheading:
     "We help travelers compare and book Loro Parque tickets and experiences in Tenerife.",
-  heroImage: "/images/lp-hero.svg",
-  heroImageAlt: "Tropical leaves and colourful parrots with Mount Teide in the distance",
+  heroImage: "/images/about-hero-gardens.jpg",
+  heroImageAlt: "Lush tropical botanical gardens, palm trees, waterfall and mountains at Loro Parque Tenerife",
   content: DEFAULT_CONTENT,
   metaTitle: "About Us | Loro Parque Tickets",
   metaDescription:

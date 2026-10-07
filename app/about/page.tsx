@@ -18,7 +18,7 @@ export async function generateMetadata(): Promise<Metadata> {
     { title: about.metaTitle, description: about.metaDescription, image: about.heroImage }
   );
   return {
-    title: about.metaTitle,
+    title: { absolute: about.metaTitle },
     description: about.metaDescription,
     alternates: { canonical: resolveCanonical("/about", about.canonicalUrl) },
     robots: resolveRobots(about.noIndex, about.noFollow),

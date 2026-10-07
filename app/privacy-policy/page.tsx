@@ -16,7 +16,7 @@ export async function generateMetadata(): Promise<Metadata> {
     { title: policy.metaTitle, description: policy.metaDescription }
   );
   return {
-    title: policy.metaTitle,
+    title: { absolute: policy.metaTitle },
     description: policy.metaDescription,
     alternates: { canonical: resolveCanonical("/privacy-policy", policy.canonicalUrl) },
     robots: resolveRobots(policy.noIndex, policy.noFollow),

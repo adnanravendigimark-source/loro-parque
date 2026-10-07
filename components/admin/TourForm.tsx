@@ -245,11 +245,10 @@ export default function TourForm({
         <div>
           <label className={labelClass}>GetYourGuide link (path or full URL)</label>
           <input
-            required
             value={tour.hrefPath}
             onChange={(e) => update("hrefPath", e.target.value)}
             className={inputClass}
-            placeholder="istanbul-l56/tour-name-t12345 — or paste a full https:// URL"
+            placeholder="Paste your full affiliate URL (used exactly as entered) — or a path like rome-l33/tour-name-t12345"
           />
         </div>
         <div>

@@ -9,12 +9,19 @@ export default async function Header() {
   const content = await getHomepageContent();
   const header = content.header;
 
-  const navLinks = [
+  const fallbackLinks = [
     { label: "Home", href: "/" },
     { label: "About Us", href: "/about" },
     { label: "Blog", href: "/blog" },
     { label: "Contact", href: "/contact" },
   ];
+  // Navbar links are edited in Admin → Homepage → Navbar; fall back only if none are saved.
+  const saved = (header.navLinks || []).filter((l) => l.label && l.href);
+  const navLinks = (saved.length > 0 ? saved : fallbackLinks).map((l) => ({
+    ...l,
+    // Section anchors must resolve to the homepage from inner pages (e.g. /blog).
+    href: l.href.startsWith("#") ? `/${l.href}` : l.href,
+  }));
   const ctaText = header.ctaText || header.bookNowText || "BOOK NOW";
   const rawCtaHref = header.ctaHref || "#tours";
   const ctaHref = rawCtaHref.startsWith("#") ? `/${rawCtaHref}` : rawCtaHref;

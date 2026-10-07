@@ -2,31 +2,31 @@ import { sql } from "./db";
 import toursSeed from "@/data/tours.json";
 import faqsSeed from "@/data/faqs.json";
 
-// ---------------------------------------------------------------------------
-// AFFILIATE / PARTNER IDS
-// ---------------------------------------------------------------------------
-// Replace this with your real GetYourGuide (or Viator / Tiqets / Headout)
-// partner ID once you have it — either directly here, or via a
-// GYG_PARTNER_ID environment variable. Every booking link reads from here,
-// so you only need to change it in one place.
-export const PARTNER_ID = process.env.GYG_PARTNER_ID || "YOUR_PARTNER_ID";
-
+// Booking links are used EXACTLY as the admin enters them (Admin → Tours &
+// Tickets → "GetYourGuide link"). Nothing is added automatically — no
+// partner id, no tracking parameters. Paste your own full affiliate URL.
 function gygLink(path: string, extra = "") {
   const trimmed = (path || "").trim();
-  // No booking link set yet (admin can add one under Tours) — keep the
-  // button harmless by pointing at the tickets section.
+  // No booking link set yet — keep the button harmless by pointing at the
+  // tickets section.
   if (!trimmed) return "#tours";
-  // The admin can paste either just the path segment (the original,
-  // documented way — "istanbul-l56/tour-name-t12345") OR a complete URL
-  // copied straight from GetYourGuide/the partner dashboard. If it's
-  // already a full URL, use it exactly as given — don't prefix it with
-  // our own base URL. Prefixing unconditionally used to double up into a
-  // broken link whenever a full URL was pasted in:
-  // https://www.getyourguide.com/https://www.getyourguide.com/...
-  if (/^https?:\/\//i.test(trimmed)) {
-    return `${trimmed}${extra || ""}`;
+  const suffix = (extra || "").trim();
+  const join = (base: string) => {
+    if (!suffix) return base;
+    if (suffix.startsWith("?") || suffix.startsWith("&")) {
+      return base.includes("?") ? base + suffix.replace(/^\?/, "&") : base + suffix.replace(/^&/, "?");
+    }
+    return base + (base.includes("?") ? "&" : "?") + suffix;
+  };
+  // Full URL: use exactly as pasted.
+  if (/^https?:\/\//i.test(trimmed)) return join(trimmed);
+  // Pasted a domain without a scheme ("www.example.com/x", "example.com/x"):
+  // treat it as a full URL as typed.
+  if (/^(www\.|[a-z0-9-]+(\.[a-z0-9-]+)+(\/|\?|$))/i.test(trimmed) && !trimmed.includes(" ")) {
+    return join(`https://${trimmed}`);
   }
-  return `https://www.getyourguide.com/${trimmed}?partner_id=${PARTNER_ID}&utm_medium=online_publisher&cmp=loroparquetickets${extra}`;
+  // Bare GetYourGuide path ("rome-l33/tour-name-t12345"): only prefix the site origin.
+  return join(`https://www.getyourguide.com/${trimmed.replace(/^\/+/, "")}`);
 }
 
 export type TourType = "guided" | "self-guided" | "combo";

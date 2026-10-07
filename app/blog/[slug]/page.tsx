@@ -51,7 +51,7 @@ export async function generateMetadata({
     { title: post.metaTitle, description: post.metaDescription, image: post.image }
   );
   return {
-    title: post.metaTitle,
+    title: post.metaTitle ? { absolute: post.metaTitle } : post.title,
     description: post.metaDescription,
     alternates: { canonical: resolveCanonical(`/blog/${params.slug}`, post.canonicalUrl) },
     robots: resolveRobots(post.noIndex, post.noFollow),

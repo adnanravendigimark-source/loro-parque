@@ -24,7 +24,6 @@ Never commit `.env`; use `.env.example` as the template.
 | `DATABASE_URL` | This project's Neon database (pooled, server-side only) |
 | `ADMIN_EMAIL` / `ADMIN_PASSWORD` | Owner account for `/admin` |
 | `ADMIN_SESSION_SECRET` | Signs admin session cookies (**required in production**) |
-| `GYG_PARTNER_ID` | GetYourGuide partner id appended to booking links |
 | `NEXT_PUBLIC_SITE_URL` | Public URL (also set in `lib/site.ts` → `SITE_URL`) |
 | `BLOB_STORE_ID`, `BLOB_READ_WRITE_TOKEN` | Vercel Blob for image uploads (create a new store) |
 | `NEXT_PUBLIC_GA_ID` | Optional GA4 id; nothing loads when empty |

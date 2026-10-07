@@ -20,7 +20,7 @@ export async function generateMetadata(): Promise<Metadata> {
   const settings = await getBlogSeoSettings();
   const og = resolveOg(settings, { title: settings.metaTitle, description: settings.metaDescription });
   return {
-    title: settings.metaTitle,
+    title: { absolute: settings.metaTitle },
     description: settings.metaDescription,
     alternates: { canonical: resolveCanonical("/blog", settings.canonicalUrl) },
     robots: resolveRobots(settings.noIndex, settings.noFollow),

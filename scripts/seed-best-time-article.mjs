@@ -98,7 +98,7 @@ const articleRecord = {
   focusKeyword: focusKeyword,
   noIndex: false,
   noFollow: false,
-  canonicalUrl: "https://www.loroparquetickets.com/blog/best-time-of-year-to-visit-loro-parque",
+  canonicalUrl: "https://www.loroparque-tickets.com/blog/best-time-of-year-to-visit-loro-parque",
   ogTitle: "Best Time to Visit Loro Parque: Seasons, Weather & Crowds",
   ogDescription:
     "Discover the best time to visit Loro Parque in Tenerife. Learn about seasonal weather in Puerto de la Cruz, peak crowd months, animal activity, and planning tips.",
